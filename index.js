@@ -75,7 +75,7 @@ app.delete('/api/persons/:id', (request, response) => {
 })
 
 const generateId = () => {
-  const maxId = Math.floor(Math.random() * 100000000)
+  const maxId = Math.floor(Math.random() * 100000000).toString()
   return maxId
 }
 
