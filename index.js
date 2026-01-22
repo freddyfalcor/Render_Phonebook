@@ -5,7 +5,7 @@ const app = express()
 
 
 app.use(express.json())
-app.use(express.static('dist'))
+//app.use(express.static('dist'))
 
 morgan.token('type', function (req, res) { 
   if (req.method === 'POST' && req.body) {
